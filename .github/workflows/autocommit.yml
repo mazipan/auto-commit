@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           cat > LAST_UPDATED
-          d=`date '+%A, %d-%M-%Y %h:%m:%s'`
+          d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo $d > LAST_UPDATED
           
       - name: Commit changes
@@ -29,7 +29,7 @@ jobs:
           git config --local user.email "mazipanneh@gmail.com"
           git config --local user.name "mazipan"
           git add -A
-          git commit -m "Auto commit changes"
+          git commit -m "feat: auto commit 😂"
           
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.5.0
