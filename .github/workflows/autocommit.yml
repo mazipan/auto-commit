@@ -21,7 +21,7 @@ jobs:
       - name: Modify last update
         run: |
           cat > LAST_UPDATED
-          d=`date '+%A, %d-%M-%Y'`
+          d=`date '+%A, %d-%M-%Y %h:%m:%s'`
           echo $d > LAST_UPDATED
           
       - name: Commit changes
