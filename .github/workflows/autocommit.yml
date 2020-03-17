@@ -1,1 +1,42 @@
+name: Auto commit
 
+on:
+
+  push:
+    branches:
+      - master
+      
+  schedule:
+  - cron: "0 7 * * *"
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+        with:
+         persist-credentials: false
+         fetch-depth: 0
+
+      - name: Commit changes
+        run: |
+          d=`date '+%A, %d-%M-%Y'`
+          echo $d > LAST_UPDATE
+          git config --local user.email "mazipanneh@gmail.com"
+          git config --local user.name "mazipan"
+          git add -A
+          git commit -m "Auto commit changes"
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "mazipanneh@gmail.com"
+          git config --local user.name "mazipan"
+          git add -A
+          git commit -m "Auto commit changes"
+          
+      - name: GitHub Push
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          force: true
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
