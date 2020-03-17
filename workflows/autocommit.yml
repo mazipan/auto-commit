@@ -1,6 +1,11 @@
 name: Auto commit
 
 on:
+
+  push:
+    branches:
+      - master
+      
   schedule:
   - cron: "0 7 * * *"
 
