@@ -18,14 +18,11 @@ jobs:
          persist-credentials: false
          fetch-depth: 0
 
-      - name: Commit changes
+      - name: Modify last update
         run: |
+          cat > LAST_UPDATED
           d=`date '+%A, %d-%M-%Y'`
-          echo $d > LAST_UPDATE
-          git config --local user.email "mazipanneh@gmail.com"
-          git config --local user.name "mazipan"
-          git add -A
-          git commit -m "Auto commit changes"
+          echo $d > LAST_UPDATED
           
       - name: Commit changes
         run: |
