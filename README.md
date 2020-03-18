@@ -6,7 +6,8 @@
 
 ## Make it your own
 
-- Just change `email` and `name` information on file [autocommit.yml](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L29)
+- Just change `email` and `name` information on file [autocommit.yml, line 29](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L29)
+- Change the scheduling time on file [autocommit.yml, line 10](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L10). You can use [crontab.guru](https://crontab.guru/) if you are not familiar with cron schedule string.
 
 ## Credits
 
