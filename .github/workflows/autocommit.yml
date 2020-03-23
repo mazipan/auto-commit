@@ -2,9 +2,9 @@ name: Auto commit
 
 on:
 
-  # push:
-    # branches:
-      # - master
+  push:
+    branches:
+      - master
       
   schedule:
   - cron: "0 7,8,9,10,11 * * *"
@@ -29,6 +29,19 @@ jobs:
           git config --local user.email "mazipanneh@gmail.com"
           git config --local user.name "mazipan"
           git add -A
+          
+          arr[0]="feat: 😂"
+          arr[1]="feat: 😱"
+          arr[2]="feat: 👿"
+          arr[3]="feat: 💩"
+          arr[4]="feat: 🙏"
+          arr[5]="feat: 🙈"
+          arr[6]="feat: 🐐"
+          arr[7]="feat: 🚀"
+          
+          rand=$[$RANDOM % ${#arr[@]}]
+          echo ${arr[$rand]}
+          
           git commit -m "feat: auto commit 😂"
           
       - name: GitHub Push
