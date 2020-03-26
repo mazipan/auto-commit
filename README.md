@@ -7,7 +7,7 @@
 ## Make it your own
 
 - Fork this repo
-- Activate your Github Actions, go to tab **Actions**, and enable it if you see this below image.
+- Activate your Github Actions, go to tab **Actions**, and enable it, click the "*I understand my workflows, go ahead and run them*" button if you still see this below image.
 
 ![Enable github actions](screenshoot-actions.png)
 
