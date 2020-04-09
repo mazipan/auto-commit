@@ -20,7 +20,6 @@ jobs:
 
       - name: Modify last update
         run: |
-          cat > LAST_UPDATED
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
           echo $d > LAST_UPDATED
           
