@@ -6,11 +6,8 @@
 
 ## Make it your own
 
-- Fork this repo
-- Activate your Github Actions, go to tab **Actions**, and enable it, click the "*I understand my workflows, go ahead and run them*" button if you still see this below image.
-
-![Enable github actions](screenshoot-actions.png)
-
+- Create your own repo (forked repo will not work)
+- Copy file in `.github/workflows/autocommit.yml` and `LAST_UPDATED`
 - Change the `email` and `name` information on file [autocommit.yml, line 29 and 30](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L29)
 - Change the scheduling time on file [autocommit.yml, line 10](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L10). You can use [crontab.guru](https://crontab.guru/) if you are not familiar with the cron schedule string. For the starter you can try to run it in every hour with string `1 * * * *` .
 
