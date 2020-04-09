@@ -11,6 +11,10 @@
 - Change the `email` and `name` information on file [autocommit.yml, line 29 and 30](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L29)
 - Change the scheduling time on file [autocommit.yml, line 10](https://github.com/mazipan/auto-commit/blob/master/.github/workflows/autocommit.yml#L10). You can use [crontab.guru](https://crontab.guru/) if you are not familiar with the cron schedule string. For the starter you can try to run it in every hour with string `1 * * * *` .
 
+## Article (in Bahasa Indonesia)
+
+- https://mazipan.space/membuat-commit-otomatis-ke-github/
+
 ## Credits
 
 - [Github Actions](https://github.com/features/actions)
