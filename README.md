@@ -16,6 +16,11 @@
 
 - https://mazipan.space/membuat-commit-otomatis-ke-github/
 
+## Repo using autocommit
+
+- You can add your repo here
+
+
 ## Credits
 
 - [Github Actions](https://github.com/features/actions)
