@@ -4,6 +4,8 @@
 
 [![Auto commit](https://github.com/mazipan/auto-commit/workflows/Auto%20commit/badge.svg)](https://github.com/mazipan/auto-commit/actions?query=workflow%3A%22Auto+commit%22)
 
+![](screenshoot.png)
+
 ## Make it your own
 
 - Create your own repo with click "Use this template" button (forked repo will not work)
