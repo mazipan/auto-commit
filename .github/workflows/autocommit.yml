@@ -13,7 +13,7 @@ jobs:
   auto_commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2      
+      - uses: actions/checkout@v3      
         with:
          persist-credentials: false
          fetch-depth: 0
@@ -45,7 +45,7 @@ jobs:
           git commit -m "${arr[$rand]}"
           
       - name: GitHub Push
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@master
         with:
           force: true
           directory: "."
