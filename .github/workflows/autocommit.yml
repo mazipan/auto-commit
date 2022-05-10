@@ -47,6 +47,6 @@ jobs:
       - name: GitHub Push
         uses: ad-m/github-push-action@master
         with:
-          force: true
+          force-with-lease: true
           directory: "."
           github_token: ${{ secrets.GITHUB_TOKEN }}
