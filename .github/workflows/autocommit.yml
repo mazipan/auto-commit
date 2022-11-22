@@ -45,7 +45,7 @@ jobs:
           git commit -m "${arr[$rand]}"
           
       - name: GitHub Push
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@v0.6.0
         with:
           force_with_lease: true
           directory: "."
