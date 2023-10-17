@@ -6,7 +6,7 @@
 
 ![](screenshoot.png)
 
-![](https://raw.githubusercontent.com/mazipan/mazipan/master/profile-3d-contrib/profile-green-animate.svg)
+![](https://ghchart.rshah.org/mazipan)
 
 ## Make it your own
 
