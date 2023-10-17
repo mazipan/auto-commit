@@ -4,9 +4,7 @@
 
 [![Auto commit](https://github.com/mazipan/auto-commit/workflows/Auto%20commit/badge.svg)](https://github.com/mazipan/auto-commit/actions?query=workflow%3A%22Auto+commit%22)
 
-![](screenshoot.png)
-
-![](https://ghchart.rshah.org/mazipan)
+![Mazipan's Github Stats](https://ghchart.rshah.org/mazipan)
 
 ## Make it your own
 
